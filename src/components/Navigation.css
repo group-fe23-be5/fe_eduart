@@ -1,0 +1,50 @@
+.navbar{
+  background-color: none;
+}
+.navbar-collapse{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  margin: 0 20px;
+}
+.nav-button{
+  margin: 0 0 0 10px;
+}
+.nav-button button{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.signin-button{
+  color: #F49D1A;
+  background-color: white;
+}
+.signin-button:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.733);
+}
+
+.signup-button{
+  color: white;
+  background-color: #FFB72B;
+}
+.signup-button:hover{
+  color: white;
+  background-color: #ffb82b85;
+}
+
+#nav-menu:hover {
+  color: #FFB72B;
+  font-weight: 500;
+  transform: scale(1.1);
+}
+
+Nav .active{
+  font-weight: 500;
+  transform: scale(1.1);
+  text-decoration: underline;
+  border-radius: 8px;
+}
