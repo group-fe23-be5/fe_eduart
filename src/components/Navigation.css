@@ -29,7 +29,7 @@
 
 .signup-button{
   color: white;
-  background-color: #FFB72B;
+  background-color: #F49D1A;
 }
 .signup-button:hover{
   color: white;
@@ -46,5 +46,42 @@ Nav .active{
   font-weight: 500;
   transform: scale(1.1);
   text-decoration: underline;
-  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse{
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .navbar-nav{
+    margin: 20px 0;
+    width: 100%;
+  }
+  #nav-menu{
+    text-align: center;
+    /* width: 100vw; */
+  }
+  .nav-link:hover{
+    background-color: #FFB72B;
+    border-radius: 5px;
+  } 
+  #nav-menu:hover {
+    color: white;
+    font-weight: 500;
+  }
+  .nav-button button{
+    width: 100%;
+  }
+
+  Nav .active{
+    /* background-color: #F49D1A; */
+    font-weight: 500;
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
+  .nav-button{
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
 }

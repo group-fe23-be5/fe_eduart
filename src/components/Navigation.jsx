@@ -8,11 +8,11 @@ function Navigation() {
     <>
         <Navbar expand="lg">
           <Container className="nav-container">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
               <Navbar.Brand href="#home">
                 <img src="/src/assets/logo_eduart.png" alt="Logo" />
               </Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="menu-tengah">
                   <NavLink  to="/" className="nav-link" id="nav-menu" >Home</NavLink>
                   <NavLink to="/course" className="nav-link" id="nav-menu" >Course</NavLink>
