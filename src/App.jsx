@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation"
 import Article from "./pages/Article"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/article" element={<Article />}/>
         <Route path="/*" element={<NotFound />}/>
       </Routes>
+      <Footer />
     </>
   )
 }
