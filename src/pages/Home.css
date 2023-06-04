@@ -20,6 +20,27 @@
 }
 /* end : hero style */
 
+/* begin : info style */
+.info-section{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black ;
+    border-radius: 10px;
+}
+.info-col{
+    display: flex;
+    justify-content: center;
+}
+.info-col.col img{
+    align-items: center;
+    margin: 0 25px;
+    width: 15%;
+}
+.info-detail{
+   align-items: center;
+}
+/* end : info style */
+
 /* begin : class style */
 .class-section{
     margin: 80px 0;
@@ -121,6 +142,12 @@ ul#class-detail {
     }
     /* end : hero style */
 
+    /* begin : info style */
+    .info-col.col img{
+        width: 25%;
+    }
+    /* end : info style */
+
     /* begin : class style */
     .class-card.card{
         width: 90%;
@@ -153,7 +180,6 @@ ul#class-detail {
     .card-article-title, .article-title.desc{
         font-size: 12px; 
     }
-
     /* end : article style */
 }
 

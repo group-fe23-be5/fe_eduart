@@ -18,6 +18,25 @@ function Home() {
         </Row>
       </Container>
 
+      <Container className='info-section' >
+        <Row>
+          <Col className='info-col'>
+            <img src="/src/assets/topi.png" alt="student" />
+            <div className="info-detail">
+              <h2>100+</h2>
+              <p>Total Siswa</p>
+            </div>
+          </Col>
+          <Col className='info-col'>
+            <img src="/src/assets/books.png" alt="course" />
+            <div className="info-detail">
+              <h2>5+</h2>
+              <p>Total Pembelajaran</p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
       <Container className='class-section'>
         <h1 className='class-title' >Produk Pemberlajar Kami</h1>
         <p className='class-title desc' >Kami menyediakan kursus online dan offline yang dirancang untuk mempelajari suatu subjek atau keterampilan tertentu.</p>
