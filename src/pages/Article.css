@@ -1,0 +1,87 @@
+.article-page{
+    background-color: #F6F4E6;
+    padding-bottom: 80px;
+}
+.article-hero-section.container{
+    align-items: center;
+    padding: 30px 0;
+}
+
+.article-hero-img{ 
+    width: 100%;
+}
+.article-hero-row.row{
+    align-items: center;
+}
+
+
+/* begin : style article-content-section */
+.article-content-section.container{
+    margin-top: 80px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 10px;
+    background-color: white;
+}
+.bg-warning.rounded-circle{
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+}
+.article-publish-detail.row{
+    align-items: center;
+    margin: 20px 0;
+}
+.article-content.row{
+    margin: 20px 0;
+}
+.article-cover.row{
+    margin: auto;
+    width: 97%;
+    border-radius: 10px;
+    height: 30vw;
+    background-image: url(https://remedial.id/wp-content/uploads/2019/01/raihan-4-A3-720x1024.jpg);
+    background-size: cover;
+}
+/* end : style article-content-section */
+
+@media (max-width: 992px) {
+    /* begin : style article-hero-section */
+    .article-hero-content.col-lg-9{
+        text-align: center;
+    }
+    .article-hero-img{ 
+        display: none;
+    }
+    /* end : style article-hero-section */
+
+    /* begin : style article-content-section */
+    .article-content-section.container{
+        margin-top: 50px;
+        padding: 40px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .article-content-section.container{
+        margin-top: 50px;
+        padding: 25px;
+        width: 85%;
+    }
+    .article-title.row h2{
+        font-size: 20px;
+    }
+    .me-auto.author #text, .article-date{
+        font-size: 10px;
+    }
+    .article-content.row{
+        font-size: 12px;
+    }
+}
