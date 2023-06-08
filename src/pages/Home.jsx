@@ -138,7 +138,9 @@ function Home() {
                   melangkah tuhan buat hati bukan untuk disakiti dan bukan
                   berarti untuk tidak melangkah lebih jauh lagi yang terakhir…
                 </Card.Text>
-                <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                <Link to="/ArticleContent">
+                  <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
@@ -157,8 +159,9 @@ function Home() {
                   rindu tampaknya aku mengira, sebab rongganya membesar
                   perlahan-lahan sehingga membuat…
                 </Card.Text>
-                <Button className='card-article-button'>Baca Selengkapnya...</Button>
-              </Card.Body>
+                <Link to="/ArticleContent">
+                  <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                </Link></Card.Body>
             </Card>
           </Col>
           <Col className='article-col' >
@@ -174,8 +177,9 @@ function Home() {
                   Mereka seakan berbicara dalam alam bawah sadarku ‘untuk apa
                   bertahan sedangkan ia mencintai wanita lain?’
                 </Card.Text>
-                <Button className='card-article-button'>Baca Selengkapnya...</Button>
-              </Card.Body>
+                <Link to="/ArticleContent">
+                  <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                </Link></Card.Body>
             </Card>
           </Col>
         </Row>
