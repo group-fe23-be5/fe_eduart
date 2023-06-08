@@ -36,7 +36,9 @@ function Article(){
                             melangkah tuhan buat hati bukan untuk disakiti dan bukan
                             berarti untuk tidak melangkah lebih jauh lagi yang terakhir…
                             </Card.Text>
-                            <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                            <Link to="/ArticleContent">
+                                <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </Col>
@@ -74,46 +76,14 @@ function Article(){
                             Mereka seakan berbicara dalam alam bawah sadarku ‘untuk apa
                             bertahan sedangkan ia mencintai wanita lain?’
                             </Card.Text>
-                            <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                            <Link to="/ArticleContent">
+                                <Button className='card-article-button'>Baca Selengkapnya...</Button>
+                            </Link>
                         </Card.Body>
                         </Card>
                     </Col>
                 </Row>
             </Container>
-
-            <Container className="article-content-section" >
-                <Row className="article-title" >
-                    <h2>Ini Judul</h2>
-                </Row>
-                <Row className="article-publish-detail" >
-                    <Stack direction="horizontal" gap={3}>
-                        <div className="bg-warning rounded-circle">MS</div>
-                        <div className="me-auto author size-sm">author name<br/>speciality</div>
-                        <div className="article-date">date published</div>
-                    </Stack>
-                </Row>
-                <Row className="article-cover">
-                </Row>
-                <Row className="article-content" >
-                    <h6>Sub-judul</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/><br/>
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, cumque?<br/>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, placeat.
-                    </p>
-                </Row>
-                <hr/>
-                <h6>
-                    judul
-                </h6>
-            </Container>
-
         </div>
         
     )
