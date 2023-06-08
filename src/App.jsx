@@ -6,6 +6,8 @@ import NotFound from "./pages/NotFound"
 import Footer from "./components/Footer"
 import SignUp from "./pages/SignUp"
 import SignIn from "./pages/SignIn"
+import Course  from "./pages/course/Course"
+import OfflineClass from "./pages/OfflineClass/OfflineClass"
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         <Route path="/signin" element={<SignIn />}/>
         <Route path="/article" element={<Article />}/>
         <Route path="/*" element={<NotFound />}/>
+        <Route path="/course" element={<Course />}/>
+        <Route path="/offlineClass" element={<OfflineClass />}/>
+        
       </Routes>
       <Footer />
     </>
