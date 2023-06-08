@@ -1,8 +1,16 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  const navigate = useNavigate();
+
+  const onClickOfflineClass = () => {
+    navigate('/course')
+  }
+  
   return (
     <div className="landing-page">
       <Container className="hero-section">
@@ -113,7 +121,7 @@ function Home() {
                 <hr/>
                 <h5 className='class-price' >Price : <span className='nom-price'> Rp50.000/month</span></h5>
                 <hr/>
-                <Button className='card-class-button'>Mulai !</Button>
+                <Button className='card-class-button' onClick={onClickOfflineClass}>Mulai !</Button>
               </Card.Body>
             </Card>
           </Col>
