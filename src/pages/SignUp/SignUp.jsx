@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { connect} from "react-redux";
 import { Link } from "react-router-dom";
-import { registerUser } from "../redux/actions/signupActions";
+import { registerUser } from "../../redux/actions/signupActions";
 import './SignUp.css'
 
 function SignUp(props) {
