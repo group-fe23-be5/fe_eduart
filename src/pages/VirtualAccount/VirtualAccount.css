@@ -1,0 +1,65 @@
+.justify-content-md-center.row{
+    margin: 80px 0;
+}
+.virtual-acc-card.card{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgba(55, 55, 55, 0.316);
+}
+.order-id{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(55, 55, 55, 0.316);
+    margin: 50px 0 30px 0;
+}
+.bank-detail, .no-va-detail{
+    margin: 0 30px;
+}
+.va-desc-detail{
+    padding: 10px;
+}
+span.counter-payment{
+    color: red;
+}
+button.card-va-button.btn.btn-primary{
+    margin: 30px;
+    width: 90%;
+    background-color: #F49D1A;
+    border: none;
+}
+button.card-va-button.btn.btn-primary:hover{
+    background-color: #f49d1a82;
+}
+.copy-button-col.col{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.copy-button.btn.btn-primary{
+    
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #F49D1A;
+}
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.payment-img{
+    width: 40%;
+}
+.modal-footer{
+    justify-content: center  !important;
+}
+button.modal-mentor-button.btn.btn-primary{
+    padding: 5px 60px;
+    background-color: #F49D1A;
+    border: none;
+}
+button.modal-mentor-button.btn.btn-primary:hover{
+    background-color: #f49d1a82;
+}
