@@ -9,6 +9,8 @@ import SignIn from "./pages/SignIn/SignIn"
 import ArticleContent from "./pages/Article/ArticleContent"
 import Course  from "./pages/course/Course"
 import OfflineClass from "./pages/OfflineClass/OfflineClass"
+import Invoice from "./pages/Invoice/Invoice"
+import VirtualAccount from "./pages/VirtualAccount/VirtualAccount"
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
         <Route path="/*" element={<NotFound />}/>
         <Route path="/course" element={<Course />}/>
         <Route path="/offlineClass" element={<OfflineClass />}/>
-        
+        <Route path="/invoice" element={<Invoice />}/>
+        <Route path="/virtualAccount" element={<VirtualAccount />}/>
       </Routes>
       <Footer />
     </>
