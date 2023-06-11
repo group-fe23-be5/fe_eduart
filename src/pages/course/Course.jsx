@@ -7,6 +7,12 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const Course = () => {
+  const navigate = useNavigate();
+
+  const onClickMusicPoet = (paramLink) => {
+    navigate(paramLink);
+  };
+
   return (
     <>
       <Carousel autoplay effect="fade">
@@ -27,7 +33,11 @@ const Course = () => {
           <Row gutter={[16, 16]} justify="center" key={index}>
             <Col xs={24} xl={12}>
               <div className="img-cardClass">
-                <img src={data.image} alt="cover" />
+                <img
+                  src={data.image}
+                  alt="cover"
+                  style={{ maxWidth: "80%", maxHeight: "250px" }}
+                />
               </div>
             </Col>
             <Col xs={24} xl={12}>
