@@ -62,7 +62,7 @@ export const rewardData = [
   {
     title: "Materi",
     description:
-      "Peserta akan mendapatkan buku materi pembelajaran yang berisikan dasar, tips, dan contoh cord beberapa lagu yang dapat meningkatkan kemampuan peserta.",
+      "Peserta akan mendapatkan buku materi pembelajaran yang berisikan dasar, dan tips yang dapat meningkatkan kemampuan peserta.",
     image: BoorkmarkIcon,
   },
   {
@@ -79,12 +79,13 @@ export const rewardData = [
   },
   {
     title: "Harga",
-    description: "Harga yang ditawarkan telah disesuaikan dengan kantong pelajar, yaitu hanya mulai Rp150.000,- (*belum termasuk diskon)",
+    description:
+      "Harga yang ditawarkan telah disesuaikan dengan kantong pelajar",
     image: DollarIcon,
   },
   {
     title: "Penghargaan",
-    description: "Harga yang ditawarkan telah disesuaikan dengan kantong pelajar, yaitu hanya mulai Rp150.000,- (*belum termasuk diskon)",
+    description: "Peserta akan mendapatkan sertifikasi keahlian",
     image: RewardIcon,
   },
 ];

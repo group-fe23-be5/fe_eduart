@@ -6,13 +6,16 @@ import { BrowserRouter } from 'react-router-dom'
 import store from './redux/store.js'
 import { Provider } from 'react-redux'
 // import './index.css'
+import { ApiProvider } from './ApiContext.jsx';
+import axios from "axios";
+axios.defaults.withCredentials = true;
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-  <Provider store={store}>
+  <ApiProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>
+  </ApiProvider>
   // </React.StrictMode>,
 )

@@ -38,4 +38,4 @@ function ArticleContent(){
     )
 }
 
-export default ArticleContent
+export default ArticleContent;
