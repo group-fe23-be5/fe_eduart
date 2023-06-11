@@ -19,9 +19,7 @@ function SignIn(){
                 email: email,
                 password: password,
             });
-            // localStorage.setItem('token', response.data.access_token);
-            // const token = localStorage.getItem('token');
-            // console.log(`ini tokennya ${token}`);
+            localStorage.setItem('token', response.data.access_token);
             console.log(`ini tokennya ${response.data.access_token}`);
             history("/");
         } catch (error) {
