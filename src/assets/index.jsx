@@ -6,7 +6,7 @@ import Toga from "./images/toga.svg";
 import Mentoring from "./images/mentoring.svg";
 import Offline from "./images/offline.svg";
 import Online from "./images/online.svg";
-import OfflineClassHeader from "./images/offlineClassHeader.svg";
+import OfflineClassHeader from "./images/DetailKelas.svg";
 import OfflineClassSection1 from "./images/offlineClassSection1.svg";
 import UsersIcon from "./images/UsersIcon.svg";
 import MessageIcon from "./images/MessageIcon.svg";
@@ -22,8 +22,8 @@ import SangkarPilu from "./images/cardsData-1.svg";
 import PutusCinta from "./images/cardsData-2.svg";
 import SecarikDialog from "./images/cardsData-3.svg";
 import KataMereka from "./images/kataMereka-1.svg";
-import MusikTradisional from "./images/musikTradisional.svg";
-import PemahamanNada from "./images/pemahamanNada.svg";
+import MusikTradisional from "./images/Program.jpeg";
+import PemahamanNada from "./images/Modul.jpeg";
 import RewardIcon from "./images/rewardIcon.svg";
 
 export {
