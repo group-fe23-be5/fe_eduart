@@ -1,0 +1,63 @@
+.payment-method-page{
+    background-color: #F49D1A;
+    padding: 50px;
+}
+.metode-pembayaran.container{
+    background-color: aqua;
+}
+.payment-method.card{
+    padding: 50px;
+    border-radius: 25px;
+}
+.card-title.h5{
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0;
+}
+.payment-method.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.total-pm.row{
+    margin: 10px 0;
+}
+.payment-option.row{
+    padding: 20px 30px;
+}
+.price.col p{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+h5.payment-sub{
+    font-weight: bold;
+}
+
+button.payment-option.btn.btn-primary.btn-lg{
+    align-items: center;
+    margin: 8px 0;
+    display: flex;
+    box-shadow: 0px 1px 10px rgba(55, 55, 55, 0.316);
+    background-color: #f6f1f176;
+    border: none;
+}
+button.payment-option.btn.btn-primary.btn-lg:hover{
+    background-color: #b2b1b149;
+}
+
+p.payment-option{
+    font-size: 12px;
+    color: black;
+    margin: 0 10px;
+}
+
+@media (max-width: 450px) {
+    .payment-method.card-body{
+        text-align: center;
+        padding: 0;
+    }
+    p.payment-option{
+        display: none;
+    }
+}
