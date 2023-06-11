@@ -1,8 +1,15 @@
 import { Container, Row, Col, Button, Card, Stack, Image } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import './Article.css'
+import { useApiContext } from '../../ApiContext';
 
 function Article(){
+    const articles = useApiContext();
+
+    // React.useEffect(() => {
+    //     fetchData();
+    //   }, []);
+
     return(
         
         <div className="article-page">
@@ -22,26 +29,30 @@ function Article(){
 
             <Container className="article-card-section">
                 <Row className='article-row'>
-                    <Col className='article-col' >
-                        <Card className='article-card' >
-                        <Card.Img variant="top" src="/src/assets/sangkar.png" />
-                        <Card.Body>
-                            <Card.Title className='card-article-title'>Sangkar - sangkar Pilu</Card.Title>
-                            <hr className='article-separator'/>
-                            <Card.Text className='card-article-title'>
-                            untuk erina gita cantika duduk disini dipinggir air tak
-                            bertuan buatku ingin menulis saja erina gita cantika jangan
-                            cepat sedih jangan cepat merenung karena jiwamu selayaknya
-                            hanya untuk berbahagia jangan cepat patah sebelum kau
-                            melangkah tuhan buat hati bukan untuk disakiti dan bukan
-                            berarti untuk tidak melangkah lebih jauh lagi yang terakhir…
-                            </Card.Text>
-                            <Link to="/ArticleContent">
-                                <Button className='card-article-button'>Baca Selengkapnya...</Button>
-                            </Link>
-                        </Card.Body>
-                        </Card>
-                    </Col>
+                   
+                    <div>
+      {articles.map((article) => (
+        <Col className='article-col' key={article.id_artikel}>
+          <Card className='article-card'>
+            <Card.Img variant='top' src={`/src/assets/${article.filename}`} />
+            <Card.Body>
+              <Card.Title className='card-article-title'>
+                {article.judul}
+              </Card.Title>
+              <hr className='article-separator' />
+              <Card.Text className='card-article-title'>
+                {article.subJudul}
+              </Card.Text>
+              <Link to="/articleContent">
+                <Button className='card-article-button'>
+                  Baca Selengkapnya...
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </div>
                     <Col className='article-col' >
                         <Card className='article-card' >
                         <Card.Img variant="top" src="/src/assets/putus.png" />
@@ -57,7 +68,7 @@ function Article(){
                             rindu tampaknya aku mengira, sebab rongganya membesar
                             perlahan-lahan sehingga membuat…
                             </Card.Text>
-                            <Link to="/ArticleContent">
+                            <Link to="/articleContent">
                                 <Button className='card-article-button'>Baca Selengkapnya...</Button>
                             </Link>
                         </Card.Body>
@@ -76,7 +87,7 @@ function Article(){
                             Mereka seakan berbicara dalam alam bawah sadarku ‘untuk apa
                             bertahan sedangkan ia mencintai wanita lain?’
                             </Card.Text>
-                            <Link to="/ArticleContent">
+                            <Link to="/articleContent">
                                 <Button className='card-article-button'>Baca Selengkapnya...</Button>
                             </Link>
                         </Card.Body>
