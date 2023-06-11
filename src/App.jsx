@@ -11,6 +11,8 @@ import Course  from "./pages/course/Course"
 import OfflineClass from "./pages/OfflineClass/OfflineClass"
 import Invoice from "./pages/Invoice/Invoice"
 import VirtualAccount from "./pages/VirtualAccount/VirtualAccount"
+import Mentor from "./pages/Mentor/Mentor"
+import MetodePembayaran from "./pages/MetodePembayaran/MetodePembayaran"
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/offlineClass" element={<OfflineClass />}/>
         <Route path="/invoice" element={<Invoice />}/>
         <Route path="/virtualAccount" element={<VirtualAccount />}/>
+        <Route path="/metodePembayaran" element={<MetodePembayaran />}/>
+        <Route path="/mentor" element={<Mentor/>}/>
       </Routes>
       <Footer />
     </>

@@ -1,0 +1,105 @@
+
+.mentor-hero-left.col{
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+}
+h1.mentor-hero-desc{
+    padding: 20px;
+    box-shadow: 1px 1px 15px rgba(14, 14, 14, 0.761);
+    color: white;
+}
+.mentor-hero-section.row{
+    margin: 50px 0;
+    background-color: #F49D1A;
+    border-radius: 15px;
+}
+.mentor-hero-right.col{
+    padding: 40px 60px;
+}
+img.mentor-hero-img{
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 20px;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 1px 1px 15px rgba(14, 14, 14, 0.761);
+}
+
+/* //mentor content */
+.mentor-content.row{
+    margin: 50px;
+}
+img.mentor-profil-img.rounded-circle{
+    width: 100%;
+}
+.mentor-profil.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+.mentor-profil.col-md-4.col-6{
+    text-align: center;
+    width: 55%;
+    margin: 20px 0;
+}
+h5.mentor-name, p.mentor-desc{
+    margin: 20px 0;
+}
+.mentor-desc-col.col-lg-8{
+    display: flex;
+}
+.mentor-desc-card.card{
+    display: flex;
+    padding: 20px;
+    box-shadow: 1px 1px 15px rgba(55, 55, 55, 0.316);
+    background-color: #F6F1F1;
+}
+.mentor-profil-card.card{
+    box-shadow: 1px 1px 15px rgba(55, 55, 55, 0.316);
+    background-color: #F6F1F1;
+}
+button.mentor-schedule-button.btn.btn-primary{
+    margin-top: 10px;
+    background-color: #F49D1A;
+    border: none;
+}
+button.mentor-schedule-button.btn.btn-primary:hover{
+    background-color: #f49d1a82;
+}
+
+@media (max-width: 992px) {
+    .mentor-hero-left.col{
+        padding: 30px 30px;
+    }
+    h1.mentor-hero-desc{
+        font-size: 20px;
+    }
+    .mentor-hero-right.col{
+        padding: 20px 30px;
+    }
+    img.mentor-hero-img{
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mentor-hero-section.row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+    .mentor-hero-left.col{
+        justify-content: center;
+        padding: 10px;
+    }
+    h1.mentor-hero-desc{
+        background-color: #F49D1A;
+        padding: 10px;
+        font-size: 14px;
+    }
+    img.mentor-hero-img{
+        display: none;
+    }
+}
