@@ -1,9 +1,20 @@
 import React from 'react';
 import { Navbar, Container, Nav} from 'react-bootstrap';
 import './Navigation.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink,  } from 'react-router-dom'
 
 function Navigation() {
+  const PrivateNavLink = ({to, children}) => {
+    const token = localStorage.getItem('token');
+    console.log(`ini tokennn ${token}`)
+
+    if (token == null){
+      return <NavLink to="/signin" />;
+    }
+
+    return <NavLink to={to} className="nav-link" id="nav-menu">{children}</NavLink>;
+  }
+
   return (
     <>
         <Navbar expand="lg">
@@ -16,8 +27,10 @@ function Navigation() {
                 <Nav className="menu-tengah">
                   <NavLink  to="/" className="nav-link" id="nav-menu" >Home</NavLink>
                   <NavLink to="/course" className="nav-link" id="nav-menu" >Course</NavLink>
-                  <NavLink to="/mentor" className="nav-link" id="nav-menu" >Mentor</NavLink>
+                  {/* <NavLink to="/mentor" className="nav-link" id="nav-menu" >Mentor</NavLink> */}
                   <NavLink to="/article" className="nav-link"  id="nav-menu">Article</NavLink>
+                  <PrivateNavLink to="/mentor">Mentor</PrivateNavLink>
+                  {/* <PrivateNavLink to="/article">Article</PrivateNavLink> */}
                 </Nav>
                 <Nav className="menu-kanan">
                   <NavLink to="/SignIn" className="nav-button">

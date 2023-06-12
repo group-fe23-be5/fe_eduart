@@ -2,6 +2,7 @@ import { Container, Row, Col, Button, Card, Stack, Image } from "react-bootstrap
 import { Link } from "react-router-dom"
 import './Article.css'
 import { useApiContext } from '../../ApiContext';
+import { useEffect } from "react";
 
 function Article(){
     const articles = useApiContext();
@@ -10,6 +11,10 @@ function Article(){
     //     fetchData();
     //   }, []);
 
+    useEffect(() =>{
+      const token = localStorage.getItem('token');
+      console.log(`printttttt ${token}`);
+    })
     return(
         
         <div className="article-page">
@@ -34,7 +39,7 @@ function Article(){
       {articles.map((article) => (
         <Col className='article-col' key={article.id_artikel}>
           <Card className='article-card'>
-            <Card.Img variant='top' src={`/src/assets/${article.filename}`} />
+            <Card.Img variant='top' src={`http://localhost:3000/assets/${article.filename}`} />
             <Card.Body>
               <Card.Title className='card-article-title'>
                 {article.judul}
@@ -43,7 +48,7 @@ function Article(){
               <Card.Text className='card-article-title'>
                 {article.subJudul}
               </Card.Text>
-              <Link to="/articleContent">
+              <Link to={`/articleContent/${article.id_artikel}`}>
                 <Button className='card-article-button'>
                   Baca Selengkapnya...
                 </Button>

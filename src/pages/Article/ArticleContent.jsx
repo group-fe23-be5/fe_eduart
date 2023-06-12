@@ -1,7 +1,29 @@
 import { Container, Row, Stack } from "react-bootstrap"
 import './Article.css'
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 function ArticleContent(){
+    const { id } = useParams();
+    console.log(`ini iddd ${id}`);
+
+  useEffect(() => {
+    // Fetch the article based on the "id" parameter
+    const fetchArticle = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/artikel/${id}`);
+        const article = response.data;
+        // Do something with the fetched article data
+        console.log(`ini artikel ${article}`)
+      } catch (error) {
+        console.error('Error fetching article:', error);
+      }
+    };
+
+    fetchArticle();
+  }, [id]);
+
     return(
         <Container className="article-content-section" >
                 <Row className="article-title" >

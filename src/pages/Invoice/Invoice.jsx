@@ -1,7 +1,14 @@
 import { Container, Row, Col, Button, Card, Badge } from "react-bootstrap";
 import './Invoice.css'
+import { useNavigate, Link } from 'react-router-dom';
 
 function Invoice() {
+    const navigate = useNavigate();
+
+  const onClickMetode = () => {
+    navigate('/metodePembayaran')
+  }
+
   return (
     <section className="invoice">
       <Container>
@@ -108,7 +115,7 @@ function Invoice() {
                                 </Col>
                             </Row>
                         </div>
-                        <Button className='card-invoice-button'>Pilih Metode Pembayaran</Button>
+                        <Button className='card-invoice-button' onClick={onClickMetode}>Pilih Metode Pembayaran</Button>
                     </Card.Body>
                 </Card>
             </Col>

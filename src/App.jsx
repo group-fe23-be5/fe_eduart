@@ -27,7 +27,7 @@ function App() {
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/signin" element={<SignIn />}/>
         <Route path="/article" element={<Article />}/>
-        <Route path="/articleContent" element={<ArticleContent />}/>
+        <Route path="/articleContent/:id" element={<ArticleContent />}/>
         <Route path="/*" element={<NotFound />}/>
         <Route path="/course" element={<Course />}/>
         <Route path="/offlineClass" element={<OfflineClass />}/>
